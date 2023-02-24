@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,200;1,700&display=swap');
+
+body{
+    background-color: #5DADE2;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo {
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 200px;
+    background: #ffff99;
+    color: #333;
+    border-radius: 10%;
+    font-size: 34px;
+}
+
+#subtitulo{
+    font-size: 24px;
+
+}
+
+.tarjeta{
+    display: flex;
+    gap: 15px;
+}
+.tarjeta-mokepon{
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 150px;
+    justify-content: center;
+    padding: 10px;
+    background: aliceblue;
+    box-sizing: border-box;
+    border-radius: 10%;
+    font-weight: bold;
+
+}
+.tarjeta-mokepon img{
+    width: 150px;
+}
+#boton-mascotas{
+    width: 130px;
+    height: 55px;
+    border-radius: 10%;
+    border: blueviolet;
+    background-color: cadetblue;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 25px;
+}
+#seleccionar-ataque{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-ataque{
+    border-radius: 20%;
+    margin: 15px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    background-color: mediumslateblue;
+}
+#mascota-jugador,#mascota-enemigo{
+    margin: 15px;
+}
+#mensajes{
+    margin-top: 15px;
+    background-color: aquamarine;
+    border-radius: 30px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-direction: column;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+#botones-ataques{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#boton-reiniciar{
+    border: transparent;
+    color: darkslategrey;
+    background-color: transparent;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+
+.ataquesJugador,.ataquesEnemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#vida-jugador,#vida-enemigo{
+    font-size: 32px;
+}
+
+input{
+     display: none;
+}
+
+input:checked+label{
+background-color: #3E54AC;
+}
+@media (max-width: 360px){
+    .tarjeta,#botones-ataques   {
+        flex-direction: column;
+    }
+}
